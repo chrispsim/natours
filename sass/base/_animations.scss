@@ -1,0 +1,58 @@
+/*
+Animations
+When using CSS to create shapes, animations and etc, think with coordinates (x,y)
+positive value means go to the right and negative value means go the left
+*/
+
+/*-------
+Different Animation Types - Refer to the MDN CSS Docs for more methods
+
+animation-delay: 3s | waits for 3s before starting the animations
+animation-iteration-count: 3; | play the animation 3 times
+animation-fill-mode: backwards; | automatically apply the styles up to 0% before the animation starts
+
+-------*/
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  80% {
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  80% {
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
